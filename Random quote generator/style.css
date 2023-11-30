@@ -1,0 +1,41 @@
+body{
+    background-color: hotpink;
+}
+
+.container{
+
+    width: 95%;
+    height: 100vh;
+    display: flex;
+}
+
+.quotes{
+    border: 10px solid green;
+    width: 900px;
+    height: 450px;
+    margin: auto;
+    display: -webkit-inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    color: gray;
+    background-color: aliceblue;
+}
+#quote{
+    font-size: 1.5rem;
+    color: red;
+}
+#author{
+    font-size: 1.5rem;
+    color: blue;
+}
+
+@media(max-width:480px){
+    .quotes p{
+        font-size: 1rem;
+    }
+    .quotes h3{
+        font-size: 1rem;
+    } 
+}

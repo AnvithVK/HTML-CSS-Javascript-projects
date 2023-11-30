@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Pixelify+Sans&display=swap');
+
+
+body{
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Pixelify Sans', cursive;
+    overflow: hidden;
+    background: conic-gradient(from 90deg at bottom right, cyan, rebeccapurple);
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    margin: auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalClock{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+    background-color: rgb(233, 5, 5);
+}
+
+.digitalClock h1{
+    display: inline;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+
+@media(max-width:768px){
+    #bar1,#bar2{
+        display: none;
+    }
+
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+
+    .digitalClock h1{
+        display: block;
+    }
+}
+
+@media(max-width:480px){
+    .digitalClock h1{
+        font-size: 4rem;
+    }
+}
